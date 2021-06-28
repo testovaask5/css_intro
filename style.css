@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 
+section.gallary {
+    text-align: left;
+} */
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+/* ################ Gallary start ################ */
+
+.gallary {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    /* width: 600px; */
+    /* mw300 */
+    min-width: 300px;
+    /* maw800 */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallary__image {
+    /* width: 100%; */
+    /* display: block; */
+    margin: 10px 0;
+}
+
+.gallary__header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+/* ################ Gallary end ################ */
