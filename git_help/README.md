@@ -23,6 +23,10 @@ $ git config --global user.email johndoe@example.com
 
 `$ git commit -m "Commit's name"`
 
+### Комбинация git add и git commit
+
+`$ git commit -am "Commit's name"`
+
 ### Просмотр истории версий кода:
 
 `$ git log`
