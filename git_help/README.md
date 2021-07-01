@@ -27,7 +27,7 @@ $ git config --global user.email johndoe@example.com
 
 `$ git commit -am "Commit's name"`
 
-### Просмотр истории версий кода:
+### Просмотр истории версий кода (выйти из конца команды - клавиша q):
 
 `$ git log`
 
@@ -35,6 +35,52 @@ $ git config --global user.email johndoe@example.com
 
 `$ git remote add origin https://github.com/testovaask5/css_intro.git`
 
+### Просмотреть список удаленных репозиториев:
+
+`$ git remote show`
+
+### Просмотреть информацию о удаленном репозитории
+
+`$ git remote show origin`
+
 ### Отправляем в удаленный репозиторий:
 
 `$ git push origin master`
+
+## Работа с ветвями:
+
+### Создание новой ветви:
+
+`$ git branch new-branch`
+
+### Просмотр всех ветвей:
+
+`$ git branch --list`
+
+### Переключится на новую ветвь:
+
+`$ git checkout new-branch`
+
+### Вносим изменения в файлы и делаем commit
+
+`$ git commit -am "Commit's name"`
+
+### Переходим обратно в главную ветвь:
+
+`$ git checkout master`
+
+### Вносим изменения в файлы и делаем commit (необязательно)
+
+`$ git commit -am "Commit's name"`
+
+### Делаем слияние ветвей (необходимо убедится, что мы в master ветке `$ git status`)
+
+`$ git merge new-branch`
+
+### В случае конфликтов редактируем файлы и делаем индексацию файлов и commit:
+
+`$ git commit -am "Commit's name"`
+
+### Удалить ветку:
+
+`$ git branch -d new-branch`
