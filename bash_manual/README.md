@@ -32,6 +32,10 @@
 
 `$ mv script.js ../somedir/main.js`
 
+### Скопировать файл:
+
+`$ cp ../pics/2.jpg ./pics/wallpaper.jpg`
+
 ### Удалить файл (сначала нажо создать):
 
 ```shell

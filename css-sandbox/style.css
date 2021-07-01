@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    max-width: 500px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    /* justify-content: space-between; */
+}
+
+.element {
+    border: 2px solid rgb(241, 36, 36);
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    flex-grow: 1;
+    flex-shrink: 0;
+    /* margin-right: auto; */
+}

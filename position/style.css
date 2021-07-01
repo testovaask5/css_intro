@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.wallpaper {
+    background: no-repeat url('pics/wallpaper.jpg');
+    background-size: cover;
+    height: 100vh;
+}
