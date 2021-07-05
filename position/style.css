@@ -1,9 +1,145 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     margin: 0;
+}
+
+html {
+    /* Base font-size for 'rem' */
+    font-size: 16px;
 }
 
 .wallpaper {
     background: no-repeat url('pics/wallpaper.jpg');
     background-size: cover;
+    background-position: center;
     height: 100vh;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* font-family: 'Montserrat', sans-serif; */
+    padding: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 350px) and (orientation: portrait) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.order {
+    height: 100vh;
+    position: relative;
+}
+
+.order-background {
+    background: no-repeat url('pics/order-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.order-info {
+    /* Position start */
+    position: absolute;
+    /* CSS absolute выравнивание по вертикали способ 1 старт */
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+    width: 200px;
+    height: 50px; */
+    /* CSS absolute выравнивание по вертикали способ 1 конец */
+
+    /* CSS absolute выравнивание по вертикали способ 2 старт */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* CSS absolute выравнивание по вертикали способ 2 конец */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* font-family: 'Montserrat', sans-serif; */
+    z-index: 9999;
+}
+
+.order-mask {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.order-button {
+    height: 3rem;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(45deg, red, blue);
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+    position: relative;
+}
+
+.order-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all .5s;
+    /* background: linear-gradient(45deg, rgb(200, 0, 0), rgb(0, 0, 200)); */
+}
+
+.order-button:hover::after {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* background: linear-gradient(45deg, rgb(200, 0, 0), rgb(0, 0, 200)); */
+}
+
+.order-button:active {
+    box-shadow: 0 0 0 0.25rem rgb(83, 83, 253);
 }
