@@ -162,6 +162,7 @@ html {
     background-size: 150% 150%;
     /* background-position: 0% 50%; */
     animation: out .5s ease forwards;
+    transform: translate(-100px, -50px) rotate(-45deg) scale(1.5, 1.5);    
 }
 
 /* Transition */
